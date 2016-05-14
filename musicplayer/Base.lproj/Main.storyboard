@@ -87,28 +87,28 @@
                                     <constraint firstAttribute="height" constant="258" id="xfH-rx-oxc"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-6E-3Ij">
-                                <rect key="frame" x="178" y="316" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-6E-3Ij">
+                                <rect key="frame" x="178" y="340" width="55" height="30"/>
                                 <state key="normal" title="Detener"/>
                                 <connections>
                                     <action selector="stop:" destination="boU-Im-rPu" eventType="touchUpInside" id="9j9-19-FV0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-au-5v4">
-                                <rect key="frame" x="28" y="316" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-au-5v4">
+                                <rect key="frame" x="28" y="340" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="play:" destination="boU-Im-rPu" eventType="touchUpInside" id="p2N-td-jQd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-Ej-7kh">
-                                <rect key="frame" x="34" y="383" width="58" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-Ej-7kh">
+                                <rect key="frame" x="34" y="407" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="S0A-2g-T6O">
-                                <rect key="frame" x="137" y="379" width="118" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="S0A-2g-T6O">
+                                <rect key="frame" x="137" y="403" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="Z56-Un-eo1"/>
                                 </constraints>
@@ -116,22 +116,28 @@
                                     <action selector="volumeChanged:" destination="boU-Im-rPu" eventType="valueChanged" id="IYj-L5-00f"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUC-sL-gEM">
-                                <rect key="frame" x="97" y="316" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUC-sL-gEM">
+                                <rect key="frame" x="97" y="340" width="42" height="30"/>
                                 <state key="normal" title="Pause"/>
                                 <connections>
                                     <action selector="pause:" destination="boU-Im-rPu" eventType="touchUpInside" id="n1p-KA-Wb5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRK-Q2-pxF">
-                                <rect key="frame" x="255" y="316" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRK-Q2-pxF">
+                                <rect key="frame" x="255" y="340" width="50" height="30"/>
                                 <state key="normal" title="Shuffle"/>
                                 <connections>
                                     <action selector="shuffle:" destination="boU-Im-rPu" eventType="touchUpInside" id="yM9-O5-HEM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGS-S4-2Nd">
+                                <rect key="frame" x="28" y="311" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9851112565445026" green="0.19790073146980572" blue="0.18920780713183069" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="S0A-2g-T6O" firstAttribute="top" secondItem="eoh-6E-3Ij" secondAttribute="bottom" constant="33" id="Egk-cd-4GM"/>
                             <constraint firstItem="yrh-Ej-7kh" firstAttribute="leading" secondItem="tYe-VL-mcn" secondAttribute="leadingMargin" constant="14" id="HJq-9e-IO1"/>
@@ -151,12 +157,14 @@
                     </view>
                     <connections>
                         <outlet property="poster" destination="cyJ-CC-hd5" id="hKA-4Z-Fj6"/>
+                        <outlet property="shuffle" destination="xRK-Q2-pxF" id="VvR-BM-UzW"/>
+                        <outlet property="track" destination="JGS-S4-2Nd" id="7Er-xv-ZKS"/>
                         <outlet property="volumeOutlet" destination="S0A-2g-T6O" id="n8H-1l-biE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnQ-2Q-aTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="237"/>
+            <point key="canvasLocation" x="1178" y="235"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XrA-qB-zW3">

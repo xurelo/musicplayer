@@ -13,6 +13,7 @@ class PlayScreen: UIViewController {
     var player : Player? = nil
     var songs: [String] = ["Instrumental", "Jazz", "Myst"]
     var covers: [String] = ["sunset_cover.jpg", "jazz_cover.jpg","myst_cover.jpg"];
+    var titles: [String] = ["1.Sunset", "2.Jazz","3.Mysterious"];
 
     @IBAction func volumeChanged(sender: AnyObject) {
         let slider : UISlider = sender as! UISlider
@@ -21,7 +22,13 @@ class PlayScreen: UIViewController {
     }
     @IBOutlet weak var volumeOutlet: UISlider!
     @IBAction func shuffle(sender: AnyObject) {
-        player?.setShuffle();
+        let shuf: Bool = (player?.setShuffle())!;
+        let button : UIButton = sender as! UIButton
+        if (shuf) {
+            button.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
+        } else {
+             button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        }
     }
     @IBAction func stop(sender: AnyObject) {
         player?.stop();
@@ -30,6 +37,9 @@ class PlayScreen: UIViewController {
         player?.play();
     }
     
+    
+    @IBOutlet weak var shuffle: UIButton!
+    @IBOutlet weak var track: UILabel!
     @IBAction func pause(sender: AnyObject) {
         print("PAUSE");
         player?.pause();
@@ -50,6 +60,7 @@ class PlayScreen: UIViewController {
     func changedSond(index: Int) {
         let frameworkBundle = NSBundle.mainBundle();
         let str = self.covers[index];
+        track.text = self.titles[index];
         print("put image:\(str)")
         let imagePath = frameworkBundle.pathForResource(self.covers[index], ofType: "")
         if imagePath != nil {

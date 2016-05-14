@@ -15,7 +15,7 @@ class Player: NSObject, AVAudioPlayerDelegate {
     private var reproductor : AVAudioPlayer!
     private var urls: [NSURL] = []
     private var index: Int = 0;
-    private var shuffle: Bool = false;
+    var shuffle: Bool = false;
     private var parent : PlayScreen? = nil
     
     init(songs: [String], firstIndex: Int, parent: PlayScreen) {
@@ -34,11 +34,16 @@ class Player: NSObject, AVAudioPlayerDelegate {
     }
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) { // *
+        print("song finished");
         if (self.shuffle) {
+            print("is in shuffle mode");
             self.index = Int(arc4random()%2)
+            print("nuevo index:\(index)");
+            self.startPlayer();
         } else {
             self.index+=1;
-            self.index = self.index % self.songs.count
+            self.index = self.index % (self.songs.count)
+            print("nuevo index:\(index)");
             self.startPlayer();
         }
     }
@@ -47,6 +52,7 @@ class Player: NSObject, AVAudioPlayerDelegate {
     func startPlayer() {
         do {
             try reproductor = AVAudioPlayer(contentsOfURL: self.urls[self.index]);
+            reproductor.numberOfLoops = 0;
             reproductor.stop();
             reproductor.delegate = self;
             reproductor.play();
@@ -81,8 +87,9 @@ class Player: NSObject, AVAudioPlayerDelegate {
         }
     }
     
-    func setShuffle() {
+    func setShuffle() -> Bool {
         self.shuffle = !self.shuffle;
+        return self.shuffle;
     }
     
 }
