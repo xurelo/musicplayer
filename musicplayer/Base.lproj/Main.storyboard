@@ -125,7 +125,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRK-Q2-pxF">
                                 <rect key="frame" x="255" y="340" width="50" height="30"/>
-                                <state key="normal" title="Shuffle"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="shuffle:" destination="boU-Im-rPu" eventType="touchUpInside" id="yM9-O5-HEM"/>
                                 </connections>

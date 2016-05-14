@@ -27,7 +27,7 @@ class PlayScreen: UIViewController {
         if (shuf) {
             button.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
         } else {
-             button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+             button.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
         }
     }
     @IBAction func stop(sender: AnyObject) {
