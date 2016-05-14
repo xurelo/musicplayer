@@ -10,9 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func third(sender: AnyObject) {
+        let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
+        conf.firstSongIndex = 2;
+        self.navigationController!.pushViewController(conf, animated: true)
+        
+    }
+    @IBAction func first(sender: AnyObject) {
+        let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
+        conf.firstSongIndex = 0;
+        self.navigationController!.pushViewController(conf, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func second(sender: AnyObject) {
+        let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
+        conf.firstSongIndex = 1;
+        self.navigationController!.pushViewController(conf, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +38,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

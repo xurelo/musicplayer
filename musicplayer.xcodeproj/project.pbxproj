@@ -12,6 +12,14 @@
 		A1EF20621CE7152100FF1278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20601CE7152100FF1278 /* Main.storyboard */; };
 		A1EF20641CE7152100FF1278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20631CE7152100FF1278 /* Assets.xcassets */; };
 		A1EF20671CE7152100FF1278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20651CE7152100FF1278 /* LaunchScreen.storyboard */; };
+		A1EF20711CE7156E00FF1278 /* Instrumental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1EF206E1CE7156E00FF1278 /* Instrumental.mp3 */; };
+		A1EF20721CE7156E00FF1278 /* Jazz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1EF206F1CE7156E00FF1278 /* Jazz.mp3 */; };
+		A1EF20731CE7156E00FF1278 /* Myst.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20701CE7156E00FF1278 /* Myst.mp3 */; };
+		A1EF20751CE718BB00FF1278 /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF20741CE718BB00FF1278 /* PlayScreen.swift */; };
+		A1EF20771CE71BA000FF1278 /* myst_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20761CE71BA000FF1278 /* myst_cover.jpg */; };
+		A1EF20791CE71BC900FF1278 /* sunset_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1EF20781CE71BC900FF1278 /* sunset_cover.jpg */; };
+		A1EF207B1CE71C4700FF1278 /* jazz_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1EF207A1CE71C4700FF1278 /* jazz_cover.jpg */; };
+		A1EF207D1CE71C7700FF1278 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF207C1CE71C7700FF1278 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		A1EF20631CE7152100FF1278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EF20661CE7152100FF1278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1EF20681CE7152100FF1278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EF206E1CE7156E00FF1278 /* Instrumental.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Instrumental.mp3; sourceTree = "<group>"; };
+		A1EF206F1CE7156E00FF1278 /* Jazz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jazz.mp3; sourceTree = "<group>"; };
+		A1EF20701CE7156E00FF1278 /* Myst.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Myst.mp3; sourceTree = "<group>"; };
+		A1EF20741CE718BB00FF1278 /* PlayScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
+		A1EF20761CE71BA000FF1278 /* myst_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myst_cover.jpg; sourceTree = "<group>"; };
+		A1EF20781CE71BC900FF1278 /* sunset_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunset_cover.jpg; sourceTree = "<group>"; };
+		A1EF207A1CE71C4700FF1278 /* jazz_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jazz_cover.jpg; sourceTree = "<group>"; };
+		A1EF207C1CE71C7700FF1278 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +70,20 @@
 		A1EF205B1CE7152100FF1278 /* musicplayer */ = {
 			isa = PBXGroup;
 			children = (
+				A1EF207A1CE71C4700FF1278 /* jazz_cover.jpg */,
+				A1EF20781CE71BC900FF1278 /* sunset_cover.jpg */,
 				A1EF205C1CE7152100FF1278 /* AppDelegate.swift */,
 				A1EF205E1CE7152100FF1278 /* ViewController.swift */,
+				A1EF206E1CE7156E00FF1278 /* Instrumental.mp3 */,
+				A1EF206F1CE7156E00FF1278 /* Jazz.mp3 */,
+				A1EF20701CE7156E00FF1278 /* Myst.mp3 */,
 				A1EF20601CE7152100FF1278 /* Main.storyboard */,
 				A1EF20631CE7152100FF1278 /* Assets.xcassets */,
+				A1EF20761CE71BA000FF1278 /* myst_cover.jpg */,
 				A1EF20651CE7152100FF1278 /* LaunchScreen.storyboard */,
 				A1EF20681CE7152100FF1278 /* Info.plist */,
+				A1EF20741CE718BB00FF1278 /* PlayScreen.swift */,
+				A1EF207C1CE71C7700FF1278 /* Player.swift */,
 			);
 			path = musicplayer;
 			sourceTree = "<group>";
@@ -123,9 +147,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF20731CE7156E00FF1278 /* Myst.mp3 in Resources */,
+				A1EF20771CE71BA000FF1278 /* myst_cover.jpg in Resources */,
 				A1EF20671CE7152100FF1278 /* LaunchScreen.storyboard in Resources */,
 				A1EF20641CE7152100FF1278 /* Assets.xcassets in Resources */,
+				A1EF207B1CE71C4700FF1278 /* jazz_cover.jpg in Resources */,
 				A1EF20621CE7152100FF1278 /* Main.storyboard in Resources */,
+				A1EF20711CE7156E00FF1278 /* Instrumental.mp3 in Resources */,
+				A1EF20721CE7156E00FF1278 /* Jazz.mp3 in Resources */,
+				A1EF20791CE71BC900FF1278 /* sunset_cover.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF207D1CE71C7700FF1278 /* Player.swift in Sources */,
+				A1EF20751CE718BB00FF1278 /* PlayScreen.swift in Sources */,
 				A1EF205F1CE7152100FF1278 /* ViewController.swift in Sources */,
 				A1EF205D1CE7152100FF1278 /* AppDelegate.swift in Sources */,
 			);
