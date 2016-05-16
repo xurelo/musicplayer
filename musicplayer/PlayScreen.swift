@@ -11,9 +11,9 @@ import UIKit
 class PlayScreen: UIViewController {
     var firstSongIndex: Int = 0;
     var player : Player? = nil
-    var songs: [String] = ["Instrumental", "Jazz", "Myst"]
-    var covers: [String] = ["sunset_cover.jpg", "jazz_cover.jpg","myst_cover.jpg"];
-    var titles: [String] = ["1.Sunset", "2.Jazz","3.Mysterious"];
+    var songs: [String] = ["Instrumental", "Jazz", "Myst", "mygirl_temptations", "phantom"]
+    var covers: [String] = ["sunset_cover.jpg", "jazz_cover.jpg","myst_cover.jpg", "temptations.png", "phantom.jpg"];
+    var titles: [String] = ["1.Sunset", "2.Jazz","3.Mysterious","4.My girl", "5.Phantom"];
 
     @IBAction func volumeChanged(sender: AnyObject) {
         let slider : UISlider = sender as! UISlider

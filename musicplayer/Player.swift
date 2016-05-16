@@ -33,13 +33,17 @@ class Player: NSObject, AVAudioPlayerDelegate {
         startPlayer();
     }
     
+    func makeShuffle() {
+        print("is in shuffle mode");
+        self.index = Int(arc4random()%2)
+        print("nuevo index:\(index)");
+        self.startPlayer();
+    }
+    
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) { // *
         print("song finished");
         if (self.shuffle) {
-            print("is in shuffle mode");
-            self.index = Int(arc4random()%2)
-            print("nuevo index:\(index)");
-            self.startPlayer();
+            makeShuffle();
         } else {
             self.index+=1;
             self.index = self.index % (self.songs.count)
@@ -89,6 +93,9 @@ class Player: NSObject, AVAudioPlayerDelegate {
     
     func setShuffle() -> Bool {
         self.shuffle = !self.shuffle;
+        if (self.shuffle) {
+            makeShuffle();
+        }
         return self.shuffle;
     }
     

@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func fifth(sender: AnyObject) {
+        let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
+        conf.firstSongIndex = 4;
+        self.navigationController!.pushViewController(conf, animated: true)
+    }
+    @IBAction func fourth(sender: AnyObject) {
+        let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
+        conf.firstSongIndex = 3;
+        self.navigationController!.pushViewController(conf, animated: true)
+    
+    }
+
     @IBAction func third(sender: AnyObject) {
         let conf = self.storyboard!.instantiateViewControllerWithIdentifier("PlayScreen") as! PlayScreen
         conf.firstSongIndex = 2;
